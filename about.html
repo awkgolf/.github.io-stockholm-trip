@@ -4,11 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About & Contact | The Wandering Gemini</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
 <style>
-    /* --- COPIED STYLES (Keeps design consistent) --- */
     body {
         margin: 0;
         padding: 0;
@@ -71,8 +68,6 @@
         margin-top: 40px;
     }
 
-    /* --- NEW STYLES FOR ABOUT PAGE --- */
-
     /* Two-column layout for the Bio section */
     .about-section {
         display: flex;
@@ -85,7 +80,7 @@
         width: 200px;
         height: 200px;
         object-fit: cover;
-        border-radius: 50%; /* Makes image circular */
+        border-radius: 50%;
         border: 4px solid #f4f4f9;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
@@ -117,7 +112,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         font-family: 'Open Sans', sans-serif;
-        box-sizing: border-box; /* Ensures padding doesn't widen element */
+        box-sizing: border-box;
     }
 
     textarea {
@@ -126,7 +121,7 @@
     }
 
     button.btn-submit {
-        background-color: #e67e22; /* Orange accent */
+        background-color: #e67e22;
         color: white;
         border: none;
         padding: 12px 25px;
@@ -136,27 +131,10 @@
         cursor: pointer;
         transition: background-color 0.3s;
     }
-<form action="https://formspree.io/f/xzzlyzbo" method="post">
-	<input type="hidden" name="_next" value="thanks.html">
-	<div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-    </div>
-
-    <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    </div>
-
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
-    </div>
     button.btn-submit:hover {
-        background-color: #d35400; /* Darker orange on hover */
+        background-color: #d35400;
     }
 
-    /* Mobile Responsive for About Page */
     @media (max-width: 600px) {
         .about-section {
             flex-direction: column;
@@ -166,7 +144,6 @@
 </style>
 </head>
 <body>
-
     <header>
         <h1>THE WANDERING GEMINI</h1>
         <nav>
@@ -175,52 +152,41 @@
             <a href="about.html" style="color: #e67e22;">About/Contact</a>
         </nav>
     </header>
-
     <div class="container">
-        
         <section class="about-section">
             <img src="https://placehold.co/400x400/2c3e50/white?text=Profile+Pic" alt="The Wandering Gemini" class="profile-img">
-            
             <div class="bio-text">
                 <h2>Hello, I'm the Gemini.</h2>
                 <p>Welcome to my corner of the internet! I am a travel enthusiast with a passion for cold climates, dark coffee, and discovering hidden gems in popular cities.</p>
-                <p>I started this blog in 2025 to document my journeys, starting with my frozen adventures in Scandinavia. My goal is to help you travel smarter, pack lighter, and find the best fika spots in town.</p>
+                <p>I started this blog in 2025 to document my journeys, starting with my frozen adventures in Scandinavia. My goal is to help you travel smarter, pack lighter, and find the best fika spots in Stockholm.</p>
             </div>
         </section>
-
         <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
-
         <section>
             <h2>Get in Touch</h2>
             <p>Planning a trip to Stockholm? Have a question about my itinerary? Fill out the form below or email me directly at <strong>hello@wanderinggemini.com</strong>.</p>
-
             <div class="contact-form">
-                <form action="#" method="post">
+                <form action="https://formspree.io/f/xzzlyzbo" method="post">
+                    <input type="hidden" name="_next" value="thanks.html">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
-
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
-
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="How can I help you?"></textarea>
+                        <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
                     </div>
-
                     <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
         </section>
-
     </div>
-
     <footer>
         <p>&copy; 2025 The Wandering Gemini. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
